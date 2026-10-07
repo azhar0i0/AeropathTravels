@@ -1,4 +1,4 @@
-/* Arrowpak Travels shared layout: header, mobile menu and footer for every page.
+/* Aeropath Travels shared layout: header, mobile menu and footer for every page.
    Each page has <div data-layout="header"></div> and <div data-layout="footer"></div>;
    this script swaps them for the markup below, then wires the menu, header state and anchor links. */
 (function(){
@@ -17,8 +17,8 @@
 <div class="grain" aria-hidden="true"></div>
 <header class="site-header" id="siteHeader">
   <div class="wrap nav">
-    <a class="brand" href="index.html#top" aria-label="Arrowpak Travels home">
-      <img class="on-light" src="img/logo.png" alt="Arrowpak Travels" width="610" height="183">
+    <a class="brand" href="index.html#top" aria-label="Aeropath Travels home">
+      <img class="on-light" src="img/logo.png" alt="Aeropath Travels" width="573" height="183">
       <img class="on-dark" src="img/logo-light.png" alt="" width="600" height="182">
     </a>
     <ul class="nav-links">${nav.map(([h, t]) => `<li><a href="${h}">${t}</a></li>`).join('')}</ul>
@@ -36,7 +36,7 @@
     <img src="img/dest-turkey.webp" alt="" loading="lazy">
   </div>
   <div class="menu-foot">
-    <span>hello@arrowpaktravels.com</span>
+    <span>hello@aeropathtravels.com</span>
     <a class="btn btn-light" href="index.html#contact">Book a call ${arrow}</a>
   </div>
 </nav>`;
@@ -46,7 +46,7 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="brand-col">
-        <img src="img/logo-light.png" alt="Arrowpak Travels" loading="lazy">
+        <img src="img/logo-light.png" alt="Aeropath Travels" loading="lazy">
         <p>Back-office software, websites, SEO, AEO and social media for the travel trade. Lahore, Pakistan.</p>
         <a class="btn btn-light" href="index.html#contact" style="justify-self:start">Book a discovery call ${arrow}</a>
       </div>
@@ -71,15 +71,15 @@
       <div>
         <h4>Contact &amp; legal</h4>
         <ul>
-          <li><a href="mailto:hello@arrowpaktravels.com">hello@arrowpaktravels.com</a></li>
+          <li><a href="mailto:hello@aeropathtravels.com">hello@aeropathtravels.com</a></li>
           <li>Lahore, Pakistan</li>
           <li><a href="privacy.html">Privacy policy</a></li>
           <li><a href="terms.html">Terms of service</a></li>
         </ul>
       </div>
     </div>
-    <div class="wordmark" id="wordmark" aria-hidden="true">${[...'Arrowpak'].map(c => `<span>${c}</span>`).join('')}</div>
-    <div class="foot-bottom"><span>&copy; ${new Date().getFullYear()} Arrowpak Travels. All rights reserved.</span><span><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="#top">Back to top &uarr;</a></span></div>
+    <div class="wordmark" id="wordmark" aria-hidden="true">${[...'Aeropath'].map(c => `<span>${c}</span>`).join('')}</div>
+    <div class="foot-bottom"><span>&copy; ${new Date().getFullYear()} Aeropath Travels (Pvt) Ltd. All rights reserved.</span><span><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="#top">Back to top &uarr;</a></span></div>
   </div>
 </footer>`;
 

@@ -1,6 +1,6 @@
-# Arrowpak Travels
+# Aeropath Travels
 
-Marketing site for Arrowpak Travels, a Lahore software house building back-office software, booking websites, SEO, AEO and social media for travel companies.
+Marketing site for Aeropath Travels, a Lahore software house building back-office software, booking websites, SEO, AEO and social media for travel companies.
 
 ## Pages
 

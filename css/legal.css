@@ -1,4 +1,4 @@
-/* Arrowpak Travels legal pages (privacy, terms). Loaded after site.css. */
+/* Aeropath Travels legal pages (privacy, terms). Loaded after site.css. */
 .legal-hero{position:relative;padding:calc(var(--nav-h) + env(safe-area-inset-top,0px) + 64px) 0 56px;border-bottom:1px solid var(--line);overflow:hidden}
 .legal-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 80% at 90% 0%,rgba(217,205,251,.6),transparent 70%);z-index:-1;pointer-events:none}
 .legal-hero .wrap{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end}

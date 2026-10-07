@@ -1,4 +1,4 @@
-/* Arrowpak Travels legal pages: table-of-contents scroll spy, reading progress and fade-ins. */
+/* Aeropath Travels legal pages: table-of-contents scroll spy, reading progress and fade-ins. */
 (function(){
   const sections = [...document.querySelectorAll('.prose section[id]')];
   const links = [...document.querySelectorAll('.toc a')];
