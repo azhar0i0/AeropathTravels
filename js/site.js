@@ -91,16 +91,14 @@ window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google
           <li><a href="index.html#work">Work</a></li>
           <li><a href="index.html#reviews">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact &amp; legal</h4>
+        <h4>Contact</h4>
         <ul>
           <li><a href="mailto:${office.email}">${office.email}</a></li>
           ${office.locations.map(l => `<li><a href="${l.maps}" target="_blank" rel="noopener"><small>${l.name}</small>${l.address}</a></li>`).join('')}
-          <li><a href="contact.html#faq">FAQ</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of service</a></li>
         </ul>
       </div>
     </div>
