@@ -107,7 +107,7 @@ body.menu-open .burger span:nth-child(3){top:24px;transform:rotate(-45deg)}
 
 
 /* Footer */
-footer{background:var(--navy-2);color:var(--white);margin:0 clamp(8px,1.4vw,20px) calc(clamp(8px,1.4vw,20px) + env(safe-area-inset-bottom,0px));border-radius:clamp(22px,2.4vw,36px);padding:52px 0 22px;overflow:hidden}
+footer{background:var(--navy-2);color:var(--white);margin:0 clamp(3px,.45vw,7px) calc(clamp(3px,.45vw,7px) + env(safe-area-inset-bottom,0px));border-radius:clamp(22px,2.4vw,36px);padding:52px 0 22px;overflow:hidden}
 .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px;border-bottom:1px solid var(--line-dark)}
 .foot-top .brand-col{display:grid;gap:14px;align-content:start}
 .foot-top .brand-col img{height:40px;width:auto}

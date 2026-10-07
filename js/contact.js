@@ -1,4 +1,4 @@
-/* Aeropath Travels shared contact section: office details + project form, used on the home and contact pages.
+/* Aeropath Travels contact section: office details + project form, used on the contact page (the home page shows a banner linking to it).
    A page places <div data-layout="contact"></div>; this script swaps it for the markup below and wires
    the copy-email button and form validation. Load it after site.js and before any page script that animates it. */
 (function(){

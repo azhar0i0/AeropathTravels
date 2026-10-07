@@ -12,7 +12,7 @@ Marketing site for Aeropath Travels, a Lahore software house building back-offic
 ## Structure
 
 - `css/site.css`, `js/site.js` — shared header, mobile menu and footer used by every page
-- `css/contact.css`, `js/contact.js` — shared contact section (office details + project form) used on the home and contact pages, plus contact page styles
+- `css/contact.css`, `js/contact.js` — shared contact section (office details + project form) used on the contact page, plus its styles; the home page links to it with a contact banner
 - `css/legal.css`, `js/legal.js` — shared styles and table-of-contents behaviour for the legal pages
 - `img/` — photos, logos, favicons; `img/clients/` holds client logos
 
