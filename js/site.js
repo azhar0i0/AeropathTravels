@@ -9,8 +9,14 @@ window.AEROPATH_OFFICE = {
   locations: [
     { name: 'Main office', area: 'DHA Phase 1', address: 'Street 149, Sector H Commercial, DHA Phase 1, Lahore Cantt 54820, Pakistan', lat: 31.483222, lng: 74.395722, maps: 'https://maps.app.goo.gl/ZqBRsfp69AEJjrTDA' },
     { name: 'Second office', area: 'DHA Phase 2', address: 'DHA Phase 2, Lahore Cantt 54820, Pakistan', lat: 31.475337, lng: 74.402499, maps: 'https://maps.app.goo.gl/yShakcCoVVKW5RnW8' }
+  ],
+  social: [
+    { name: 'Facebook', handle: 'Aeropath Travels', url: 'https://www.facebook.com/profile.php?id=61595162641635', icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg>' },
+    { name: 'Instagram', handle: '@aeropathtravel', url: 'https://www.instagram.com/aeropathtravel/', icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>' }
   ]
 };
+/* Round social icon links; pages and components call this so every icon row matches */
+window.AEROPATH_SOCIAL = cls => `<div class="social ${cls || ''}">${window.AEROPATH_OFFICE.social.map(s => `<a href="${s.url}" target="_blank" rel="noopener" aria-label="Aeropath Travels on ${s.name}">${s.icon}</a>`).join('')}</div>`;
 window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lng}`);
 
 (function(){
@@ -52,6 +58,7 @@ window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google
   </div>
   <div class="menu-foot">
     <span>${office.email}</span>
+    ${window.AEROPATH_SOCIAL('on-dark')}
     <a class="btn btn-light" href="contact.html">Book a call ${arrow}</a>
   </div>
 </nav>`;
@@ -64,6 +71,7 @@ window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google
         <img src="img/logo-light.png" alt="Aeropath Travels" loading="lazy">
         <p>Back-office software, websites, SEO, AEO and social media for the travel trade. Lahore, Pakistan.</p>
         <a class="btn btn-light" href="contact.html" style="justify-self:start">Book a discovery call ${arrow}</a>
+        ${window.AEROPATH_SOCIAL('on-dark')}
       </div>
       <div>
         <h4>Services</h4>

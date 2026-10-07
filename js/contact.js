@@ -23,6 +23,7 @@
         <div><span>Email</span><b id="mailText">${office.email}</b><button type="button" id="copyMail">Copy</button></div>
         <div><span>Offices</span><b>${office.short}</b><a href="${here === 'contact.html' ? '' : 'contact.html'}#visit">Map</a></div>
         <div><span>Hours</span><b>${office.hours}</b></div>
+        <div><span>Follow</span><b>${office.social.map(s => s.name).join(' &amp; ')}</b>${window.AEROPATH_SOCIAL('on-dark')}</div>
       </div>
     </div>
     <form class="form" id="contactForm" novalidate data-reveal>

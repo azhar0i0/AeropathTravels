@@ -37,6 +37,10 @@
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 31.483222, "longitude": 74.395722 },
   "hasMap": "https://maps.app.goo.gl/ZqBRsfp69AEJjrTDA",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61595162641635",
+    "https://www.instagram.com/aeropathtravel/"
+  ],
   "location": [
     {
       "@type": "Place",
@@ -177,6 +181,7 @@
       <dl>
         <div><dt>Hours</dt><dd id="officeHours"></dd></div>
         <div><dt>Email</dt><dd><a id="officeEmail"></a></dd></div>
+        <div><dt>Follow</dt><dd id="officeSocial"></dd></div>
         <div><dt>Visits</dt><dd>Email us first and we will book a time at either office so the right person is in.</dd></div>
       </dl>
     </div>
@@ -247,6 +252,7 @@
   const o = window.AEROPATH_OFFICE;
   document.getElementById('officeHours').textContent = o.hours;
   const mail = document.getElementById('officeEmail'); mail.textContent = o.email; mail.href = 'mailto:' + o.email;
+  document.getElementById('officeSocial').innerHTML = window.AEROPATH_SOCIAL();
   const ext = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>';
   const list = document.getElementById('offices');
   list.innerHTML = o.locations.map((l, i) => `

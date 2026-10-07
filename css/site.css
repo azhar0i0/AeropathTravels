@@ -112,6 +112,12 @@ footer{background:var(--navy-2);color:var(--white);padding:80px 0 calc(28px + en
 .foot-top .brand-col{display:grid;gap:18px;align-content:start}
 .foot-top .brand-col img{height:46px;width:auto}
 .foot-top .brand-col p{color:var(--muted-on-dark);max-width:36ch;font-size:15px}
+.social{display:flex;gap:8px}
+.social a{width:40px;height:40px;border-radius:999px;display:grid;place-items:center;border:1px solid var(--line);color:var(--navy);transition:background .3s,color .3s,border-color .3s,transform .45s var(--ease)}
+.social a:hover{background:var(--navy);border-color:var(--navy);color:var(--white);transform:translateY(-2px)}
+.social svg{width:18px;height:18px}
+.social.on-dark a{border-color:var(--line-dark);color:var(--white)}
+.social.on-dark a:hover{background:var(--lav);border-color:var(--lav);color:var(--navy)}
 .foot-top h4{margin:0 0 16px;font-family:var(--mono);font-size:12px;font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-on-dark)}
 .foot-top ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .foot-top ul a{transition:color .3s}
