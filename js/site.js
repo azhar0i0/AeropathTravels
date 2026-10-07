@@ -19,6 +19,7 @@ window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google
   const arrow = '<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>';
   const nav = [
     ['index.html#services', 'Services'],
+    ['index.html#ticketing', 'Ticketing'],
     ['index.html#growth', 'Growth'],
     ['index.html#process', 'Process'],
     ['index.html#work', 'Work'],
@@ -69,6 +70,7 @@ window.AEROPATH_OFFICE.locations.forEach(l => l.directions = `https://www.google
         <ul>
           <li><a href="index.html#services">Back-office software</a></li>
           <li><a href="index.html#services">Websites &amp; custom systems</a></li>
+          <li><a href="index.html#ticketing">Sabre air ticketing</a></li>
           <li><a href="index.html#growth">SEO &amp; AEO</a></li>
           <li><a href="index.html#growth">Social media</a></li>
         </ul>

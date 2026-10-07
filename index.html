@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Aeropath Travels | Software for travel companies</title>
-<meta name="description" content="Aeropath Travels builds back-office software, booking websites, SEO, AEO and social media for tour operators, Umrah and Hajj agencies and holiday brands. Based in Lahore.">
+<meta name="description" content="Aeropath Travels builds back-office software and booking websites, issues air tickets on Sabre, and runs SEO, AEO and social media for tour operators, Umrah and Hajj agencies and holiday brands. Based in Lahore.">
 <meta name="theme-color" content="#1c294e">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aeropath Travels | Software for travel companies">
-<meta property="og:description" content="Back-office software, websites, SEO, AEO and social media, built for the travel trade.">
+<meta property="og:description" content="Back-office software, Sabre air ticketing, websites, SEO, AEO and social media, built for the travel trade.">
 <meta property="og:image" content="img/favicon-512.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
@@ -197,6 +197,44 @@
 .rail-bar{flex:1;max-width:360px;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
 .rail-bar i{display:block;height:100%;width:30%;background:var(--navy);border-radius:2px;transform-origin:left}
 
+/* Ticketing (Sabre) */
+.ticketing{padding:40px 0 130px}
+.tk-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(36px,6vw,96px);align-items:center}
+.tk-copy{display:grid;gap:22px}
+.tk-copy h2{font-size:clamp(36px,4.6vw,68px)}
+.tk-copy > p{color:var(--muted);font-size:17px;max-width:50ch}
+.tk-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:6px}
+.tk-note{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tk-visual{position:relative;padding:0 0 70px 0}
+.tk-photo{border-radius:28px;overflow:hidden;aspect-ratio:12/12.4;margin-left:14%;position:relative}
+.tk-photo img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover}
+.terminal{position:absolute;left:0;top:12%;width:min(78%,440px);background:#0f1530;border-radius:18px;box-shadow:0 40px 70px -30px rgba(10,14,30,.7);overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.term-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:rgba(255,255,255,.05);font-family:var(--mono);font-size:11px;color:var(--muted-on-dark)}
+.term-bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.18)}
+.term-bar span{margin-left:8px}
+.terminal pre{margin:0;padding:16px 18px 18px;min-height:178px;font-family:var(--mono);font-size:12.5px;line-height:1.7;color:#cfe8d6;white-space:pre;overflow:hidden}
+.terminal pre .cur{display:inline-block;width:7px;height:14px;background:#cfe8d6;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+.terminal pre em{font-style:normal;color:var(--lav)}
+.eticket{position:absolute;right:4%;bottom:0;width:min(70%,360px);background:var(--white);border-radius:20px;padding:18px 20px;display:grid;gap:12px;box-shadow:0 30px 60px -28px rgba(20,29,58,.55);border:1px solid var(--line)}
+.et-top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.et-route{display:flex;align-items:center;gap:12px}
+.et-route b{font-size:30px;font-weight:600;letter-spacing:-.03em;color:var(--navy)}
+.et-line{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 11px);position:relative}
+.et-line i{position:absolute;left:0;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 4px var(--lav-soft)}
+.et-meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.et-no{font-family:var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+@media (max-width:1024px){
+  .tk-grid{grid-template-columns:1fr}
+  .tk-visual{max-width:640px}
+}
+@media (max-width:640px){
+  .tk-photo{margin-left:0;aspect-ratio:4/4.4}
+  .terminal{position:relative;top:auto;width:100%;margin-top:-90px}
+  .terminal pre{font-size:11px;min-height:150px}
+  .eticket{position:relative;right:auto;width:100%;margin-top:14px}
+  .tk-visual{padding-bottom:0}
+}
+
 /* Growth: SEO, AEO, social */
 .growth{padding:40px 0 130px}
 .growth-grid{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:20px}
@@ -333,7 +371,7 @@
         <span class="line-mask"><span>business <span class="serif">actually</span></span></span>
         <span class="line-mask"><span>runs on.</span></span>
       </h1>
-      <p class="hero-lede" data-hero>Invoicing, accounting, payroll, HR and bookings in one system, plus the website, SEO, AEO and social media that bring the enquiries in. Built for Umrah agencies, tour operators and holiday brands.</p>
+      <p class="hero-lede" data-hero>Invoicing, accounting, payroll, HR and bookings in one system, plus Sabre air ticketing and the website, SEO, AEO and social media that bring the enquiries in. Built for Umrah agencies, tour operators and holiday brands.</p>
       <div class="hero-actions" data-hero>
         <a class="btn btn-dark" href="#contact">Book a discovery call <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         <a class="link" href="#services">See what we build <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
@@ -456,6 +494,42 @@
         </div>
         <div class="card-media"><img src="img/svc-custom.webp" alt="Engineer with a laptop in a server room" loading="lazy" width="1100" height="820"><span class="tag">Built to your process</span></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETING -->
+<section class="ticketing" id="ticketing">
+  <div class="wrap tk-grid">
+    <div class="tk-copy">
+      <span class="label" data-reveal>Air ticketing</span>
+      <h2 data-reveal>Air tickets, issued on <span class="serif">Sabre</span></h2>
+      <p data-reveal>We issue, reissue and refund airline tickets through the Sabre GDS for travellers, groups and sub-agents. Each ticket posts straight into your invoicing and accounts, so the sale, the fare and the airline payable match without anyone re-typing them.</p>
+      <ul class="feats" data-reveal>
+        <li>International and domestic airlines</li>
+        <li>Umrah and group PNRs</li>
+        <li>Reissues, refunds and voids</li>
+        <li>Seat holds before payment</li>
+        <li>Sub-agent and corporate ticketing</li>
+        <li>Tickets post to invoicing automatically</li>
+      </ul>
+      <div class="tk-actions" data-reveal>
+        <a class="btn btn-dark" href="contact.html">Request a fare <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <span class="tk-note">Powered by the Sabre global distribution system</span>
+      </div>
+    </div>
+
+    <div class="tk-visual">
+      <div class="tk-photo"><img src="img/ticketing-runway.webp" alt="Passenger jet landing on a runway lit at dusk" loading="lazy" width="1200" height="1300"></div>
+      <div class="terminal" aria-hidden="true">
+        <div class="term-bar"><i></i><i></i><i></i><span>Sabre &middot; PNR QXKTRW</span></div>
+        <pre id="termText"></pre>
+      </div>
+      <div class="eticket" aria-hidden="true">
+        <div class="et-top"><span>E-ticket</span><span class="pill">Issued</span></div>
+        <div class="et-route"><b>LHE</b><span class="et-line"><i></i></span><b>JED</b></div>
+        <div class="et-meta"><span>12 Dec &middot; 2 pax &middot; Economy</span><span class="et-no">065 2417883041</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -709,6 +783,36 @@
   const railUpdate = () => { const max = rail.scrollWidth - rail.clientWidth; const vis = rail.clientWidth / rail.scrollWidth; railBar.style.width = (vis * 100) + '%'; railBar.style.transform = 'translateX(' + (max > 0 ? (rail.scrollLeft / max) * ((1 - vis) / vis) * 100 : 0) + '%)'; };
   rail.addEventListener('scroll', railUpdate, { passive: true }); addEventListener('resize', railUpdate); railUpdate();
 
+  /* Ticketing: a Sabre-style PNR types itself out, then the e-ticket lands as issued */
+  const term = document.getElementById('termText');
+  const pnr = [
+    ' 1.1KHAN/AHMED MR  2.1KHAN/SARA MRS',
+    ' 1 SV 739Y 12DEC 5 LHEJED HK2  0255  0545',
+    ' 2 SV 738Y 26DEC 5 JEDLHE HK2  1940  0310+1',
+    'TKT/TIME LIMIT',
+    '  1.TAW08OCT/',
+    '<em>W¥PQ1</em>',
+    '<em>OK 065 2417883041-42 ISSUED</em>'
+  ];
+  function typePnr(){
+    if (reduce) { term.innerHTML = pnr.join('\n'); return; }
+    let line = 0, ch = 0, out = '';
+    const step = () => {
+      if (line >= pnr.length) { term.innerHTML = out + '<span class="cur"></span>'; return; }
+      const raw = pnr[line];
+      if (raw.startsWith('<em>')) { out += raw + '\n'; line++; term.innerHTML = out + '<span class="cur"></span>'; setTimeout(step, 420); return; }
+      ch++;
+      term.innerHTML = out + raw.slice(0, ch) + '<span class="cur"></span>';
+      if (ch >= raw.length) { out += raw + '\n'; line++; ch = 0; setTimeout(step, 160); }
+      else setTimeout(step, 18);
+    };
+    step();
+  }
+  if ('IntersectionObserver' in window) {
+    const tio = new IntersectionObserver(([en]) => { if (en.isIntersecting) { tio.disconnect(); typePnr(); } }, { rootMargin: '0px 0px -15% 0px' });
+    tio.observe(term);
+  } else typePnr();
+
   /* SEO card: the search bar types travel queries in a loop while it is on screen */
   const sq = document.getElementById('serpQuery'), stt = document.getElementById('serpTitle'), sd = document.getElementById('serpDesc');
   const queries = [
@@ -843,6 +947,13 @@
 
   /* Work cards stagger in */
   gsap.from('.work-card', { y: 60, opacity: 0, duration: 1.1, stagger: .1, ease: 'expo.out', scrollTrigger: { trigger: '#rail', start: 'top 85%', once: true } });
+
+  /* Ticketing: photo drifts, terminal and e-ticket slide in from opposite sides */
+  gsap.fromTo('.tk-photo img', { yPercent: -5 }, { yPercent: 5, ease: 'none', scrollTrigger: { trigger: '.tk-photo', start: 'top bottom', end: 'bottom top', scrub: true } });
+  gsap.from('.tk-photo', { clipPath: 'inset(12% 12% 12% 12% round 28px)', duration: 1.5, ease: 'expo.inOut', scrollTrigger: { trigger: '.tk-visual', start: 'top 80%', once: true } });
+  gsap.from('.terminal', { x: -50, opacity: 0, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: '.tk-visual', start: 'top 75%', once: true } });
+  gsap.from('.eticket', { y: 60, opacity: 0, duration: 1.1, delay: 1.6, ease: 'expo.out', scrollTrigger: { trigger: '.tk-visual', start: 'top 75%', once: true } });
+  gsap.fromTo('.et-line i', { left: '0%' }, { left: 'calc(100% - 10px)', duration: 2.4, delay: 2.2, ease: 'power2.inOut', scrollTrigger: { trigger: '.tk-visual', start: 'top 75%', once: true } });
 
   /* Growth cards rise in; the AI answer writes itself and cites the client */
   gsap.from('[data-grow]', { y: 60, opacity: 0, duration: 1.1, stagger: .12, ease: 'expo.out', scrollTrigger: { trigger: '.growth-grid', start: 'top 82%', once: true } });
